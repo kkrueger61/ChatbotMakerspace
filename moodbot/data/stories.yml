@@ -28,3 +28,17 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: "intro"
+  steps:
+  - intent: greet
+  - action: utter_ask_name
+  - intent: tell_name
+  - action: utter_greet  
+
+- story: "user is happy" 
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_goodbye
+
