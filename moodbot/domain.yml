@@ -48,6 +48,10 @@ responses:
   utter_ask_sports:
   - text: "{name} do you like to do sports?"
 
+  utter_go_walk:
+  - text: "So, {name}, why don't you just go out for a walk?"
+  - text: "A little fresh air might do you some good, right? How about a walk, {name}?"
+
   utter_default:
   - text: "Sorry, I didn't get that, can you rephrase?"
 
