@@ -102,6 +102,6 @@ nlu:
      - I am [Katja](name)
      - Call me [Martina](name)
      - My friends call me [Lisa](name)
-     - [Ben](name)
-     - [Till](name)
+     - It's [Ben](name)
+     - My name is [Till](name)
      - [Diana](name)     
