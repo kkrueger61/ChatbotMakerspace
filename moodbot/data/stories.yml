@@ -61,3 +61,16 @@ stories:
   - intent: deny
   - action: utter_goodbye  
 
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_ask_name
+  - intent: tell_name
+    entities:
+    - name: Katja
+  - slot_was_set:
+    - name: Katja
+  - action: utter_greet
+  - intent: deny
+  - action: utter_cheer_up

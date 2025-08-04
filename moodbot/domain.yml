@@ -1,60 +1,52 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - tell_name
-
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- tell_name
 entities:
-  - name
-
+- name
 slots:
   name:
     type: text
-    initial_value: "my friend"
+    initial_value: my friend
     influence_conversation: false
     mappings:
-      - type: from_entity
-        entity: name 
-
+    - type: from_entity
+      entity: name
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
+  - text: Hey! How are you?
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/iPa8HCj.jpeg"
-
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/iPa8HCj.jpeg
   utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Did that help you a bit?
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Bye
+  - text: 'Goodbye {name}. I'm here for you! See you soon!'
+  - text: 'Goodbye {name}. Come back whenever you need a chat. See you!' 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+  - text: I am a bot, powered by Rasa.
   utter_happy:
-  - text: "Great {name}! Share your happiness with the world!"
-
+  - text: Great {name}! Share your happiness with the world!
   utter_ask_name:
-  - text: "Hi, what's your name?"
-
+  - text: Hi, what's your name?
   utter_ask_sports:
-  - text: "{name} do you like to do sports?"
-
+  - text: '{name} do you like to do sports?'
   utter_go_walk:
-  - text: "So, {name}, why don't you just go out for a walk?"
-  - text: "A little fresh air might do you some good, right? How about a walk, {name}?"
-
+  - text: So, {name}, why don't you just go out for a walk?
+  - text: A little fresh air might do you some good, right? How about a walk, {name}?
   utter_default:
-  - text: "Sorry, I didn't get that, can you rephrase?"
-
+  - text: Sorry, I didn't get that, can you rephrase?
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+actions:
+- utter_ask_name
+- utter_cheer_up
+- utter_greet

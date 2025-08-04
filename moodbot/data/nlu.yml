@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -17,21 +16,17 @@ nlu:
     - goodevening
     - good afternoon
     - Hallo
-    - Na du     
-
+    - Na du
 - intent: goodbye
   examples: |
-    - cu
     - good by
-    - cee you later
+    - see you later
     - good night
     - bye
     - goodbye
     - have a nice day
     - see you around
     - bye bye
-    - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -42,7 +37,6 @@ nlu:
     - correct
     - ja
     - klar
-
 - intent: deny
   examples: |
     - no
@@ -52,7 +46,7 @@ nlu:
     - don't like that
     - no way
     - not really
-
+    - fine
 - intent: mood_great
   examples: |
     - perfect
@@ -71,7 +65,6 @@ nlu:
     - so perfect
     - super
     - prima
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -89,19 +82,18 @@ nlu:
     - so saad
     - so sad
     - traurig
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
 - intent: tell_name
   examples: |
-     - I am [Katja](name)
-     - Call me [Martina](name)
-     - My friends call me [Lisa](name)
-     - It's [Ben](name)
-     - My name is [Till](name)
-     - [Diana](name)     
+    - I am [Katja](name)
+    - Call me [Martina](name)
+    - My friends call me [Lisa](name)
+    - It's [Ben](name)
+    - My name is [Till](name)
+    - [Diana](name)
+    - [katja]{"entity": "name", "value": "Katja"}
