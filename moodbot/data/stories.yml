@@ -72,6 +72,6 @@ stories:
   - slot_was_set:
     - name: Katja
   - action: utter_greet
-  - action: utter_ask_sport
+  - action: utter_ask_sports
   - intent: affirm
   - action: utter_go_walk
