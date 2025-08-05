@@ -28,8 +28,8 @@ responses:
   - text: Did that help you a bit?
   utter_goodbye:
   - text: Bye
-  - text: 'Goodbye {name}. I'm here for you! See you soon!'
-  - text: 'Goodbye {name}. Come back whenever you need a chat. See you!' 
+  - text: Goodbye {name}. I am here for you! See you soon!
+  - text: Goodbye {name}. Come back whenever you need a chat. See you!
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_happy:
@@ -48,5 +48,5 @@ session_config:
   carry_over_slots_to_new_session: true
 actions:
 - utter_ask_name
-- utter_cheer_up
 - utter_greet
+- utter_cheer_up

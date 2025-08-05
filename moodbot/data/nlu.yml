@@ -46,7 +46,6 @@ nlu:
     - don't like that
     - no way
     - not really
-    - fine
 - intent: mood_great
   examples: |
     - perfect
@@ -97,3 +96,9 @@ nlu:
     - My name is [Till](name)
     - [Diana](name)
     - [katja]{"entity": "name", "value": "Katja"}
+    - sabine
+    - [katja]{"entity": "name", "value": "Katja"}
+    - [Katja](name)
+- synonym: Katja
+  examples: |
+    - katja
