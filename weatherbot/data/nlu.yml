@@ -64,7 +64,7 @@ nlu:
       - I mean in [Kempten](GPE)
       - I mean in [South Africa](GPE)  
 
-- intent: inform_generally
+  - intent: inform_generally
     examples: |
       - Tell me more about [Berlin](GPE)
       - How is [London](GPE)
