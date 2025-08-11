@@ -7,6 +7,7 @@ session_config:
 intents:
   - inform_weather
   - tell_location
+  - inform_generally
   - goodbye
   - greet
 
@@ -22,6 +23,7 @@ slots:
         entity: GPE
 
 actions:
+  - action_generalinfo
   - action_weather
 
 responses:
