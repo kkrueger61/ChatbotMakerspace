@@ -14,7 +14,7 @@
 #  url: "http://localhost:5055/webhook"
 
 action_endpoint:
-url: "https://cuddly-robot-5gvqpjp6rjc7574-1880.app.github.dev/actionserver"
+ url: "https://cuddly-robot-5gvqpjp6rjc7574-1880.app.github.dev/actionserver"
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
